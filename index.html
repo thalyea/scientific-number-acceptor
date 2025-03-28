@@ -11,7 +11,7 @@
         <span>File</span>
         <span>Edit</span>
         <span>Run</span>
-        <span>About Us</span>
+        <span onclick="showAbout()">About Us</span>
     </nav>
 
     <div class="container">
@@ -20,7 +20,17 @@
         <button onclick="validateNumber()">Check</button>
         <p id="message"></p>
     </div>
-    
+
+    <!-- Modal untuk About Us -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAbout()">&times;</span>
+            <h3>About Us</h3>
+            <p>Nama: Thalia Anastasia Dumingan</p>
+            <p>NIM: 231011060038</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
